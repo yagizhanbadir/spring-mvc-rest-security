@@ -47,7 +47,6 @@ public class DemoAppConfig implements WebMvcConfigurer {
 			throw new RuntimeException(exc);
 		}
 		
-		// for sanity's sake, let's log url and user ... just to make sure we are reading the data
 		logger.info("jdbc.url=" + env.getProperty("jdbc.url"));
 		logger.info("jdbc.user=" + env.getProperty("jdbc.user"));
 		
